@@ -1,22 +1,23 @@
 # Expansion Loop in LLMs  
-## Detection of infinite expansion under open-ended prompts
+## Detecting infinite expansion under open-ended prompts
 
 ### 🔬 Research Project
 
 This project analyzes a structural limitation in Large Language Models (LLMs):
 
 > Infinite expansion under open-ended prompts such as:  
-> **"y algo más?" / "anything else?"**
+> **"anything else?" / "y algo más?"**
 
 ---
 
 ## 🧠 Problem
 
 LLMs can enter a loop where they:
-- Keep generating new ideas indefinitely
-- Rephrase previous concepts as new ones
-- Fail to detect conceptual saturation
-- Produce false closure statements
+
+- Continuously generate new ideas  
+- Rephrase existing concepts as if they were new  
+- Fail to detect conceptual saturation  
+- Produce false closure statements  
 
 ---
 
@@ -30,26 +31,34 @@ This is **NOT hallucination**.
 
 ## 🧪 Example
 
-See `example.md`
+See [`example.md`](./example.md)
 
 ---
 
 ## 🧩 Proposed Solution
 
-Introduce a semantic redundancy filter:
-- Compare new ideas with previous ones
-- Stop if no new concepts are introduced
+Introduce a **semantic redundancy filter**:
+
+- Compare new ideas with previously generated ones  
+- Detect conceptual overlap  
+- Stop generation if no new dimensions are introduced  
 
 ---
 
 ## 🎯 Impact
 
-- Improves reliability  
-- Prevents infinite loops  
-- Adds stopping criteria  
+- Improves LLM reliability  
+- Prevents infinite expansion loops  
+- Introduces explicit stopping criteria  
 
 ---
 
 ## 📄 Paper
 
-See `paper.md`
+See [`paper.md`](./paper.md)
+
+---
+
+## 🏷️ Tags
+
+`LLM` `AI` `Prompt Engineering` `Failure Modes` `Cognitive Systems`
